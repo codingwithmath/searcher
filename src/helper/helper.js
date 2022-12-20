@@ -22,21 +22,21 @@ function searchFilesWithTheGivenPattern(pattern, data) {
     }
   }
 
-  return sort(filenames);
+  return sortStrings(filenames);
 }
 
-function splitString(input) {
-  const formatedInput = input.split(" ");
+function splitString(string = "") {
+  const formatedString = string.split(" ");
 
-  return formatedInput;
+  return formatedString;
 }
 
-function sort(filenames) {
-  return filenames.sort();
+function sortStrings(strings = []) {
+  return strings.sort();
 }
 
 module.exports = {
   searchFilesWithTheGivenPattern,
   splitString,
-  sort,
+  sortStrings,
 };

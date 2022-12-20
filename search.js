@@ -22,12 +22,12 @@ function getPattern() {
   return pattern;
 }
 
-function print(files, input) {
+function print(files, pattern) {
   const occurrences = files.length;
 
   console.log(`Foram encontradas ${occurrences} ocorrências.`);
 
-  console.log(`Os arquivos que possuem ${input} são:`);
+  console.log(`Os arquivos que possuem ${pattern} são:`);
 
   files.forEach((file) => {
     console.log(file);

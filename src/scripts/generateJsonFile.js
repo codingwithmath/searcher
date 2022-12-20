@@ -1,13 +1,13 @@
 const fs = require("fs");
 
 function getFileNames(dir) {
-  const filesname = fs.readdirSync(`${dir}/`, { encoding: "utf-8" });
+  const filenames = fs.readdirSync(`${dir}/`, { encoding: "utf-8" });
 
-  return filesname;
+  return filenames;
 }
 
-function getFilesContents(dir, filesname) {
-  const contents = filesname.map((filename) => {
+function getFilesContents(dir, filenames) {
+  const contents = filenames.map((filename) => {
     const data = fs.readFileSync(`${dir}/${filename}`, {
       encoding: "utf-8",
       flag: "r",

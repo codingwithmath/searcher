@@ -1,3 +1,16 @@
+/**
+ * @typedef {{
+ *            filename: string,
+ *            content: string,
+ *          }}
+ */
+var DataType;
+
+/**
+ * Procura dentro de _data_ os arquivos que possuem o _pattern_ fornecido.
+ * @param {string} pattern
+ * @param {DataType} data
+ * @return {[string] | []} nome dos arquivos ou um array vazio.*/
 function searchFilesWithTheGivenPattern(pattern, data) {
   const splitedPattern = splitString(pattern);
 

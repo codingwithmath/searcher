@@ -16,7 +16,7 @@ function getPattern() {
   if (!pattern) {
     console.error("Necessário fornecer uma sentença para a pesquisa.");
 
-    throw new Error("no input pattern.");
+    throw new Error("no pattern.");
   }
 
   return pattern;
